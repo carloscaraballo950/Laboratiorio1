@@ -89,7 +89,7 @@ class Program
 	def add_player_to_team
 		form = Form.new("Agregue jugadores a los equipos")
 
-		team = form.select_from_list("Escriba el valor del Equipo al que quiere agregar este jugador", @campionship.teams)
+		team = form.select_from_list("Escriba el valor del Equipo al que quiere agregar este jugador", @championship.teams)
 		
 		if team.players.size < 5
 			
